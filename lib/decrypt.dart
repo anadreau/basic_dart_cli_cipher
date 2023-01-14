@@ -1,7 +1,7 @@
 import 'package:cipher/alphabet.dart';
 import 'package:cipher/transform.dart';
 
-String decode(String entry, int key) {
+String decrypt(String entry, int key) {
   String decodedMessage = '';
   List cipherStore = [];
   final splitEntry = entry.split('');
