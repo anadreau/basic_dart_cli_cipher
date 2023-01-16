@@ -8,13 +8,9 @@ String encrypt(String entry, int key) {
 
   for (var piece in splitEntry) {
     piece = piece.toLowerCase();
-    if (piece == ' ') {
-      cipherStore.add(piece);
-    } else {
-      var newChar = transformToCipherText(
-          alphabet.indexWhere((element) => element == piece), key);
-      cipherStore.add(newChar);
-    }
+    var newChar = transformToCipherText(
+        alphabet.indexWhere((element) => element == piece), key);
+    cipherStore.add(newChar);
   }
 
   cipher = cipherStore.join();
