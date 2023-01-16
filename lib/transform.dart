@@ -10,7 +10,7 @@ String transformToCipherText(int indexOfInput, int key) {
   }
 
   String cipherText = alphabet.elementAt(algorithm);
-  print('alphabet at value: $cipherText');
+  //print('alphabet at value: $cipherText');
 
   return cipherText;
 }
@@ -25,7 +25,7 @@ String transformToPlainText(int indexOfInput, int key) {
   }
 
   String cipherText = alphabet.elementAt(algorithm);
-  print('alphabet at value: $cipherText');
+  //print('alphabet at value: $cipherText');
 
   return cipherText;
 }
