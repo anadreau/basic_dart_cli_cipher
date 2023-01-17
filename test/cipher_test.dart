@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:cipher/alphabet.dart';
 import 'package:cipher/decrypt.dart';
 import 'package:cipher/encrypt.dart';
@@ -9,7 +11,9 @@ void main() {
   });
   test('CipherText encrpyt/decrypt with key: 1', () {
     expect(encrypt(' ', 1), 'A');
+    log('Encrypting \' \' results in: ${encrypt(' ', 1)}');
     expect(decrypt('A', 1), ' ');
+    log('Decrypting A results in: ${decrypt('A', 1)}');
   });
   test('CipherText encrypt/decrypt key greater than length of charachter list',
       () {
