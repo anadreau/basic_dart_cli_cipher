@@ -7,7 +7,6 @@ String encrypt(String entry, int key) {
   final splitEntry = entry.split('');
 
   for (var piece in splitEntry) {
-    piece = piece.toLowerCase();
     var newChar = transformToCipherText(
         alphabet.indexWhere((element) => element == piece), key);
     cipherStore.add(newChar);
